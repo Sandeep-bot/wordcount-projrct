@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>counting ....!</h1>
+<h1>the number of words are {{count}}</h1>
+
+<h1>the text was</h1>
+{{fulltext}}
+
+<h1>SCROOLDOWN TO CHECK YOUR RESULTS AND START AGAIN</h1>
+<h1>THE COUNT IS</h1>
+{%for word,countword in Sortedlist%}
+<br>
+{{word}}---{{countword}}
+{%endfor%}
+<br>
+<a href="{% url 'home'%}">START AGAIN</a>
+
+</body>
+</html>
